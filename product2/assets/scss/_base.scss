@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+body {
+   width: 100vw;
+   margin: 0 auto;
+   background-color: $white-color;
+   font-family: $inter-font;
+   color: $black-color;
+}
+.wrapper {
+   width: 1440px;
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 0;
+   background-color: $white-color;
+   font-family: $inter-font;
+   color: $black-color;
+}
+a {
+   text-decoration: none;
+   color: $black-color;
+}
