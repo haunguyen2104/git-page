@@ -15,8 +15,10 @@ window.addEventListener("scroll", function (e) {
   let y = this.window.pageYOffset;
   if (y >= 20) {
     header.classList.add("header-scroll");
+    header.style.borderBottom = "1px solid #dddddd";
   } else {
     header.classList.remove("header-scroll");
+    header.style.borderBottom = "none";
   }
 });
 

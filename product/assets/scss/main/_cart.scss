@@ -74,6 +74,13 @@
             border: 1px solid #696969;
             width: 50%;
             text-align: center;
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+               -webkit-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+               margin: 0;
+            }
          }
       }
       &-quantity,
@@ -87,6 +94,13 @@
       &-price {
          justify-content: flex-start;
          margin-left: 10px;
+      }
+      &-quantity {
+         & input {
+            border-radius: 3px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+         }
       }
       &-action {
          position: relative;
@@ -107,6 +121,9 @@
             border-radius: 5px;
             left: 11px;
             cursor: pointer;
+            &:hover {
+               border-color: #000000;
+            }
          }
          &-active {
             color: $red-color;
@@ -123,6 +140,9 @@
          right: 11px;
          transform: translateY(-50%);
          border-radius: 5px;
+         &:hover {
+            border-color: #000000;
+         }
       }
       &-control {
          display: flex;
